@@ -1,0 +1,2 @@
+The only difference with AndroidViewModel is it comes with the application context,
+which is helpful if you require context to get a system service or have a similar requirement. 
