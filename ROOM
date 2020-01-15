@@ -1,0 +1,1 @@
+ Room is designed to abstract away the underlying database tables and queries. Therefore it provides an easy way to create and use Sqlite database. It is based on best-practices for persisting data in database
