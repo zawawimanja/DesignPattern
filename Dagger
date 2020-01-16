@@ -7,6 +7,10 @@ build for test app or unit test. can use fake (mock) data than real data.
 Such classes can define methods annotated with @Provides. 
 The returned objects from these methods are available for dependency injection.
 
+@Inject: request dependencies. Can be used on a constructor, a field, or a method
+
+@Component: enable selected modules and used for performing dependency injection
+
 ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
 
 The ViewModelModule is used to provide a map of view models through dagger that is used by the ViewModelFactory class.
