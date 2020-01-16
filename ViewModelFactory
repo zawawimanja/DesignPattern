@@ -1,0 +1,5 @@
+
+
+ViewModelFactory class basically helps you dynamically create ViewModels for your Activities and Fragments. 
+The ViewModelFactoryclass has a list of providers and can create any ViewModel that was bound. Fragments
+and Activities can now just inject the factory and retrieve their ViewModel.
