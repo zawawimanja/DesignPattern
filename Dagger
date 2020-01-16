@@ -1,2 +1,28 @@
 
 build for test app or unit test. can use fake (mock) data than real data.
+
+@Module. These classes are responsible for providing objects/classes which can be injected. 
+- nak inject class mana
+
+Such classes can define methods annotated with @Provides. 
+The returned objects from these methods are available for dependency injection.
+
+ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
+
+The ViewModelModule is used to provide a map of view models through dagger that is used by the ViewModelFactory class.
+
+Step 1. Create class module
+....................................................
+Step 2. ViewModelFactory   - inject modules to viewmodelfactory
+Step 3. ViewModelKey - interface class
+Step 4.  ViewModelModule
+...............................................
+Step 5. ActivityModule
+....................
+Step 6. AppComponent
+.............
+Steps 7. Configure Application Class
+
+.......
+Steps 8. Inject to MainActivity
+
