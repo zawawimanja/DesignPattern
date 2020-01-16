@@ -7,9 +7,16 @@ build for test app or unit test. can use fake (mock) data than real data.
 Such classes can define methods annotated with @Provides. 
 The returned objects from these methods are available for dependency injection.
 
-@Inject: request dependencies. Can be used on a constructor, a field, or a method
+@Inject: request dependencies. Can be used on a constructor, a field, or a method.
+With the @Inject annotation on the constructor, we instruct Dagger that an object of this class can be injected into other objects. 
+Dagger automatically calls this constructor, if an instance of this class is requested.
 
 @Component: enable selected modules and used for performing dependency injection
+Component orang tengah antara module & activity
+ component is responsible for injecting the Application class.
+ 
+ Application -  use our MyApplicationComponent (now prefixed with Dagger) to inject our Application class. This way a DispatchingAndroidInjector is injected which is then returned when an injector for an activity is requested (through activityInjector()).
+
 
 ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
 
@@ -31,5 +38,7 @@ Steps 7. Configure Application Class
 Steps 8. Inject to MainActivity
 
 
-Component orang tengah antara module & activity
+
+
+
 
