@@ -1,0 +1,14 @@
+ Room is designed to abstract away the underlying database tables and queries. 
+ Therefore it provides an easy way to create and use Sqlite database. 
+ It is based on best-practices for persisting data in database.
+ 
+ 
+1  : Component 1 in room — Create an entity class:
+
+Step 3: Component 2 in room — Create a DAO class:
+
+Step 4: Component 3 in room — Create Database class:
+
+Step 5: Create the Repository class:
+ 
+ 
