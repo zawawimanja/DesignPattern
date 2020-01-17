@@ -3,6 +3,11 @@
  It is based on best-practices for persisting data in database.
  
  
+   // Room components
+    implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomVersion"
+ 
+ 
 Step 1  : Component 1 in room — Create an entity/model class:
 Entity (which represents the SQLite table) for your words
 Each public property in the class represents a column in the table. 
