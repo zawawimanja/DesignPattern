@@ -4,6 +4,8 @@
  
  
 Step 1  : Component 1 in room — Create an entity/model class:
+Entity (which represents the SQLite table) for your words
+Each public property in the class represents a column in the table. 
 
 Step 2: Component 2 in room — Create a DAO class:
 
