@@ -27,11 +27,23 @@ Then in our Activity/Fragment, we use the ViewModelFactory class to inject the c
 
 DaggerAppComponent jangan lupa inject dekat viewmodel
 
+Step Entity
+Step DAO
+Step Api response
+Step Api service
+Step Repository
+So this class will choose which data sources to use to get the data.
 
+Step ViewModel .
+The ViewModel will initialise an instance of the Repository class and update the UI based with this data.
+ViewModel must have access to the usingMovieDaoclass and the MovieApiService class. This is where Dagger comes in. We will be injecting the ViewModel with the MovieDao class and the MovieApiService class.
+
+***********************************************************************************************************************
 
 Step 1. Create class module
 ....................................................
 Step 2. ViewModelFactory   - inject modules to viewmodelfactory
+ViewModelFactory class basically helps you dynamically create ViewModels for your Activities and Fragments.
 
 Step 3. ViewModelKey - interface class
 ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
@@ -42,11 +54,19 @@ The ViewModelModule is used to provide a map of viewmodels through dagger that i
 Step 5. ActivityModule
 ....................
 Step 6. AppComponent
+The connection between the modules and the classes which need the dependency.
 .............
-Steps 7. Configure Application Class
-
+Steps 7. Configure Application Class & Manifest Application
+ android:name=".AppController"
 .......
 Steps 8. Inject to MainActivity
+
+
+
+##########################################################
+1. Class modules kelas mana nak inject. return object untuk DI.
+2. Inject modules class tu dalam viewmodel.
+
 
 
 
