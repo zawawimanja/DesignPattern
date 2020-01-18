@@ -15,18 +15,27 @@ Dagger automatically calls this constructor, if an instance of this class is req
 Component orang tengah antara module & activity
  component is responsible for injecting the Application class.
  
- Application -  use our MyApplicationComponent (now prefixed with Dagger) to inject our Application class. This way a DispatchingAndroidInjector is injected which is then returned when an injector for an activity is requested (through activityInjector()).
+ Application -  use our MyApplicationComponent (now prefixed with Dagger) to inject our Application class. 
+ This way a DispatchingAndroidInjector is injected which is then returned when an injector for an activity is 
+ requested (through activityInjector()).
 
 
-ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
 
-The ViewModelModule is used to provide a map of view models through dagger that is used by the ViewModelFactory class.
+We can use the ViewModelModule to define our ViewModels.
+We provide a key for each ViewModel using the ViewModelKey class.
+Then in our Activity/Fragment, we use the ViewModelFactory class to inject the corresponding ViewModel.
+
+
 
 Step 1. Create class module
 ....................................................
 Step 2. ViewModelFactory   - inject modules to viewmodelfactory
+
 Step 3. ViewModelKey - interface class
+ViewModelKeys helps you map your ViewModel classes so ViewModelFactory can correctly provide/inject them.
+
 Step 4.  ViewModelModule
+The ViewModelModule is used to provide a map of viewmodels through dagger that is used by the ViewModelFactory class.
 ...............................................
 Step 5. ActivityModule
 ....................
