@@ -1,3 +1,6 @@
+ NoSQL : NoSQL simply means Objects or Documents. Instead of storing the data in tabular form, The data is stored in POJO form, which is extremely suitable for semi-structured or un-structured data when there is no fixed schema.
+ 
+ ORM - object relational mapping
  Room is designed to abstract away the underlying database tables and queries. 
   Room will eventually be converted to SQLite code
  Therefore it provides an easy way to create and use Sqlite database. 
